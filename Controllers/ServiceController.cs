@@ -70,6 +70,7 @@ namespace RazorPages.Controllers
             {
                 return NotFound();
             }
+            ViewBag.fee = services.Fee;
 
             return View(services);
         }
